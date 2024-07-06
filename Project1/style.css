@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+  }
+  
+  /* fixed */
+  .talk {
+    height: 75px;
+    width: 85px;
+    position: fixed;
+    z-index: 99999;
+    bottom: 10px;
+    right: 20px;
+  }
+  .talk img {
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* bg-img */
+  .bg-img {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -999999;
+  }
+  .bg-img img {
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* main */
+  .main {
+    height: 78vh;
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #c32f2f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .swiper-pagination {
+    margin-bottom: 2vh;
+  }
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    opacity: 1;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background: #ffffff;
+  }
+  
+  nav {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.3vh 3vw;
+    box-shadow: 0 4px 8px black;
+  }
+  nav .right,
+  nav .left {
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+  }
+  nav i {
+    color: rgba(255, 0, 0, 0.782);
+    font-size: 1.3vw;
+  }
+  nav a {
+    font-size: 1.12vw;
+    color: rgba(255, 0, 0, 0.782);
+    text-decoration: none;
+  }
+  
+  .coffee {
+    /* height: 65vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+    display: flex;
+  
+  }
+
+  .gif img{
+    height: 100%;
+    width: 100%;
+  }
+
+  
+  .coffee .gif {
+    position: relative;
+    height: 100%;
+    width: calc(100% / 3);
+    display: flex;  
+  }
+  .coffee .gif a {
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .coffee .gif a,
+  .story a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
+  .coffee .gif button,
+  .story button {
+    background-color: #dc4348;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 20px;
+    padding: 1.5vh 1.3vw;
+    font-weight: 700;
+    text-align: center;
+    pointer-events: none;
+  }
+  /* .coffee .gif a i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+  .coffee .gif a:hover .coffee .gif a i {
+    left: 0%;
+    display: block;
+  } */
+  
+  .story {
+    height: 55vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4vh;
+  }
+  .story img {
+    height: 200px;
+    width: 400px;
+  }
+  
+  footer {
+    padding: 0 4vw;
+    background-color: white;
+  }
+  footer .social {
+    padding: 5vh 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    border-bottom: 1px solid #6c6c6c;
+  }
+  footer .social img {
+    height: 45px;
+    width: 45px;
+  }
+  
+  .links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4vh 0;
+    border-bottom: 1px solid #6c6c6c;
+  }
+  .links h2 {
+    color: #3d3d3db8;
+    font-size: 1vw;
+    margin-bottom: 1vh;
+    word-spacing: 1px;
+  }
+  .links a,
+  .links li {
+    text-decoration: none;
+    list-style-type: none;
+    color: #6c6c6cb0;
+    padding: 0.5vh 0;
+    font-size: 0.9vw;
+    word-spacing: 1px;
+  }
+  footer .copyright {
+    color: #6c6c6cb0;
+    padding: 3vh 0;
+    font-size: 0.9vw;
+    font-weight: 500;
+  }
+  
